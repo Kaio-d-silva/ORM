@@ -15,6 +15,9 @@ class Cliente(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(30))
     
+    
+    
+    
     compromissos: Mapped[List["Compromisso"]] = relationship(back_populates= "cliente")
 
 class Compromisso(Base):
