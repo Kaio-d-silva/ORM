@@ -29,4 +29,4 @@ class Compromisso(Base):
     
     cliente_id: Mapped[int] = mapped_column(ForeignKey("clientes.id"))
     # Cria uma relação, com o campo "compromissos" do Clinte
-    cliente: Mapped["Cliente"] = relationship(back_populates= "compromisso")
+    cliente: Mapped["Cliente"] = relationship(back_populates= "compromissos")
