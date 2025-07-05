@@ -1,6 +1,6 @@
 import sqlalchemy 
 
-from Models.cliente import Base
+from Models.models import Base
 
 engine = sqlalchemy.create_engine('sqlite:///banco.db')
 connection = engine.connect()
